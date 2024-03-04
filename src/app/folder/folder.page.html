@@ -1,0 +1,155 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>GYM</ion-title>
+    <ion-icon name="person-circle" slot="end"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <p style="text-align: center; font-size: 30px;">Rutina de Ejercicios</p>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center" style="font-size: 25px;">Rutina Lunes</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="ion-text-center">
+
+      <ion-segment [(ngModel)]="selecTab">
+
+        <ion-segment-button value="ejercicio1">
+          <ion-label>R1</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="ejercicio2">
+          <ion-label>R2</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="ejercicio3">
+          <ion-label>R3</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="ejercicio4">
+          <ion-label>R4</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="ejercicio5">
+          <ion-label>R5</ion-label>
+        </ion-segment-button>
+
+      </ion-segment>
+      <br>
+
+      <div *ngIf="selecTab == 'ejercicio1'" class="container">
+
+        <h2>Flexiones</h2>
+        <br>
+        <img src="../../assets/img/flexiones.jpg">
+
+        <div class="obContainer">
+          <ion-item>
+            <ion-label position="stacked">Series</ion-label>
+            <ion-label position="stacked" style="text-align: center;">99</ion-label>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Repeticiones</ion-label>
+            <ion-label position="stacked" style="text-align: center;">99</ion-label>
+          </ion-item>
+        </div>
+
+        <br>
+      </div>
+
+      <div *ngIf="selecTab == 'ejercicio2'">
+        <h2>Banco plano</h2>
+        <img src="../../assets/img/banco_plano.jpg">
+
+        <div class="obContainer">
+          <ion-item>
+            <ion-label position="stacked">Series</ion-label>
+            <ion-label position="stacked" style="text-align: center;">99</ion-label>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Repeticiones</ion-label>
+            <ion-label position="stacked" style="text-align: center;">99</ion-label>
+          </ion-item>
+        </div>
+
+        <br>
+      </div>
+
+      <div *ngIf="selecTab == 'ejercicio3'">
+        <h2> Banco inclinado</h2>
+        <img src="../../assets/img/banco_inclinado.png">
+
+        <div class="obContainer">
+          <ion-item>
+            <ion-label position="stacked">Series</ion-label>
+            <ion-label position="stacked" style="text-align: center;">99</ion-label>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Repeticiones</ion-label>
+            <ion-label position="stacked" style="text-align: center;">99</ion-label>
+          </ion-item>
+        </div>
+
+        <br>
+      </div>
+
+      <div *ngIf="selecTab == 'ejercicio4'">
+        <h2>Pull-over</h2>
+        <img src="../../assets/img/pull_over.jpg">
+
+        <div class="obContainer">
+          <ion-item>
+            <ion-label position="stacked">Series</ion-label>
+            <ion-label position="stacked" style="text-align: center;">99</ion-label>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Repeticiones</ion-label>
+            <ion-label position="stacked" style="text-align: center;">99</ion-label>
+          </ion-item>
+        </div>
+
+        <br>
+      </div>
+
+      <div *ngIf="selecTab == 'ejercicio5'">
+        <h2>Apertura con mancuerna</h2>
+        <img src="../../assets/img/apertura_mancuerna.jpg">
+
+        <div class="obContainer">
+          <ion-item>
+            <ion-label position="stacked">Series</ion-label>
+            <ion-label position="stacked" style="text-align: center;">99</ion-label>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Repeticiones</ion-label>
+            <ion-label position="stacked" style="text-align: center;">99</ion-label>
+          </ion-item>
+        </div>
+
+        <br>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<!-- 
+  <ion-card></ion-card>
+  <strong class="capitalize">{{ folder }}</strong>
+  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p> 
+-->
+
+<!-- 
+  <i class="fa-solid fa-ruler"></i> 
+-->
